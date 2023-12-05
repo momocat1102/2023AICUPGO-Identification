@@ -1,0 +1,48 @@
+PREDICT:
+  kyu_predict: False
+  dan_predict: False
+  csvs: ["./result/result_dan_old.csv", "./result/result_kyu.csv", "./result/moreTTA2_ensemble.csv"]
+  kyu:
+    df_path: "./test_dataset/kyu_test.csv"
+    # "./29_Public Testing Dataset_v2/kyu_test_public.csv"
+    ensemble:
+      # - model_path: "./save/save_kyu/kyu_input_v2_move_pred_mixv2_1_"
+      #   TTA: True
+      # - model_path: "./save/save_kyu/kyu_alphago_new_cnn_model_1_"
+      #   TTA: True
+      # - model_path: "./save/save_kyu/kyu_time_input_v3_move_pred_mix_v2_augment_1_3"
+      #   TTA: True
+      # - model_path: "./save/save_kyu/kyu_time_input_v3_move_pred_mix_v2_augment_1_4"
+      #   TTA: True
+
+      - model_path: "./save/save_kyu/kyu_time_5_input_v4_move_pred_mix_v2_augment_1_0"
+        TTA: True
+      - model_path: "./save/save_kyu/kyu_time_5_input_v4_move_pred_mix_v2_augment_2_1"
+        TTA: True
+
+      - model_path: "./save/save_kyu/kyu_time_7_input_v4_move_pred_mix_v2_augment_2_1"
+        TTA: True
+      # - model_path: "./save/save_kyu/kyu_time_7_input_v4_move_pred_mix_v2_augment_1_0"
+      #   TTA: True
+
+  dan:
+    df_path: "./test_dataset/dan_test.csv" 
+    # "./29_Public Testing Dataset_v2/dan_test_public.csv"
+    ensemble:
+      # - model_path: "./save/save_dan/dan_time_input_v3_move_pred_mix_v2_augment_1_0"
+      #   TTA: True
+
+      - model_path: "./save/save_dan/dan_time_5_input_v4_move_pred_mix_v2_augment_1_1"
+        TTA: True
+      # - model_path: "./save/save_dan/dan_time_5_input_v4_move_pred_mix_v2_augment_2_0"
+      #   TTA: True
+
+      - model_path: "./save/save_dan/dan_time_7_input_v4_move_pred_mix_v2_augment_1_0"
+        TTA: True
+      - model_path: "./save/save_dan/dan_time_7_input_v4_move_pred_mix_v2_augment_2_0"
+        TTA: True
+
+      # - model_path: "./save/save_dan/dan_time_input_v3_move_pred_mix_v2_augment_1"
+      #   TTA: True
+      # - model_path: "./save/save_dan/dan_input_v2_move_pred_mix_1_"
+      #   TTA: True

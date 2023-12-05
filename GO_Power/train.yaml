@@ -1,0 +1,19 @@
+TRAINING:
+  power: "kyu"
+  input_data: "time_5_input_v4:19,19,25" 
+  # baseline:19,19,4/inputs1:19,19,4/input_v2:19,19,4/input_v3:19,19,6
+  # time_input_v3:19,19,18/time_5_input_v4:19,19,25/time_7_input_v4:19,19,35
+  model: "move_pred_mix_v2" 
+  # cnn_model/resnet18/kata_cnn/move_pred_mix_v2/kata_cnn_2/transformer
+  augment: "1" # org/1/8
+
+  val_ratio: 0.1
+  batch_size: 2048
+  epochs: 80
+  cache_path: "./cache_kyu"
+  shuffle_seed: 1234
+  train_status: "1" # 1/2
+  weight_path: "./save/save_dan/dan_time_5_input_v4_move_pred_mix_v2_augment_1_1/best_acc.hdf5"
+  evaluate: False
+
+# tensorboard --logdir=tensorboard
