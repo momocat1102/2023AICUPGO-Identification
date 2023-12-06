@@ -34,11 +34,16 @@ def train_model(model, train_dataset, valid_dataset, save_path="save", config=No
                 try:
                     shutil.rmtree(f"{save_path}_{str(i)}")
                 except: pass
+                count = i
+                break
             else:
-                count += 1
+                count = i
+        else:
+            break
 
     os.makedirs(f"{save_path}_{str(count)}")
     save_path = f"{save_path}_{str(count)}"
+
     try:
         os.makedirs(save_path + "/tensorboard")
     except: pass

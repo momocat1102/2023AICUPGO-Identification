@@ -246,5 +246,7 @@ def input_board(moves_list, target_player, org_board, move_data=None, input_data
             else:
                 board[:, :, 2] = -1
 
+    return board
+
 
 

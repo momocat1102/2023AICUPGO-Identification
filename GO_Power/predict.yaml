@@ -32,7 +32,7 @@ PREDICT:
       # - model_path: "./save/save_dan/dan_time_input_v3_move_pred_mix_v2_augment_1_0"
       #   TTA: True
 
-      - model_path: "./save/save_dan/dan_time_5_input_v4_move_pred_mix_v2_augment_1_1"
+      # - model_path: "./save/save_dan/dan_time_5_input_v4_move_pred_mix_v2_augment_1_1"
         TTA: True
       # - model_path: "./save/save_dan/dan_time_5_input_v4_move_pred_mix_v2_augment_2_0"
       #   TTA: True
